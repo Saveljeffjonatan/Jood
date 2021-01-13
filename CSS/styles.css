@@ -1,0 +1,228 @@
+/* 
+TODO: Watch video button (circles bounce out and in)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/** font-family: 'Poppins', serif; */
+
+/*! This ensures that all browsers have 16px as default fontsize */
+:root {
+	font-size: 16px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.5;
+	color: #8a8a8a;
+}
+
+/** Beginning of help classes */
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ffbb00;
+	/* create a line from left to right under */
+}
+
+p {
+	color: #fff;
+}
+
+h1 {
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+section {
+	display: flex;
+	justify-content: space-between;
+}
+
+.margin-p {
+	margin: 1.5rem auto;
+}
+
+.bg {
+	background-color: rgb(75, 75, 80);
+}
+
+.background {
+	margin: auto;
+	background-image: url('../Images/home.svg');
+	background-repeat: no-repeat;
+	background-position: bottom;
+	padding-bottom: 13vh;
+}
+
+.poppins {
+	font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	background-color: transparent;
+	border: 1px solid transparent;
+	padding: 0.75rem auto;
+	border-radius: 0.5rem;
+	font-size: 1rem;
+	cursor: pointer;
+	width: 160px;
+	height: 50px;
+	font-weight: 500;
+}
+
+.btn-primary {
+	color: #fff;
+	background-color: #ffbb00;
+}
+
+.button-secondary {
+	color: #fff;
+	background-color: transparent;
+	border: 1px solid #fff;
+}
+
+.container {
+	width: 100%;
+	padding: 0 1rem;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.content {
+	width: 100%;
+}
+
+.collapse {
+	display: none;
+}
+
+.show {
+	display: flex;
+}
+
+/** End of help classes */
+
+/*! Beginning of Specific class changes */
+/** Top menu below this line */
+.main-menu img {
+	height: 100%;
+}
+
+.main-menu {
+	margin: 0.5rem 0;
+	padding: 0.5rem;
+}
+
+.main-menu .container .content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-menu .main-menu-nav a {
+	padding: 0 0.8rem;
+	font-size: 1.125rem;
+}
+
+.playbutton {
+	align-items: center;
+	width: 100%;
+	display: flex;
+}
+
+.playbutton img {
+	margin: 1rem auto;
+}
+
+.outer-circle {
+	border: 1px solid #ffbb00;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	cursor: pointer;
+	margin: 0 1rem;
+}
+
+.inner-circle {
+	background-color: #ffbb00;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.triangle {
+	width: 13px;
+	height: 13px;
+	background: #fff;
+	rotate: 90deg;
+	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/*! Beginning of Specific id /to/ class changes */
+
+#home .container {
+	align-items: center;
+}
+
+/*? Start of mediaqueries */
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+
+	.main-menu-nav {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.collapse {
+		display: flex;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		max-width: 960px;
+	}
+
+	.fa-play-circle {
+		display: inline-block;
+	}
+
+	#home img {
+		display: flex;
+		width: 590px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1140px;
+	}
+}
+
+/*? End of mediaqueries */
