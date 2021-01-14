@@ -73,7 +73,7 @@ section {
 }
 
 .margin-p {
-	margin: 1rem 0;
+	margin: 0.5rem 0;
 }
 
 .margin-between {
@@ -142,6 +142,43 @@ section {
 	display: flex;
 }
 
+ul {
+	display: flex;
+	flex-direction: row;
+	align-items: start;
+	list-style-type: none;
+}
+
+ul li {
+	padding: 6px 0;
+	margin: 0 0.5rem;
+}
+
+ul li a {
+	position: relative;
+	display: block;
+	color: #ecf0f1;
+	transition: 0.5s;
+}
+
+ul li a::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 3px;
+	top: 100%;
+	left: 0;
+	background: #ffbb00;
+	transition: transform 0.5s;
+	transform: scaleX(0);
+	transform-origin: right;
+}
+
+ul li a:hover::after {
+	transform: scaleX(1);
+	transform-origin: left;
+}
+
 /** End of help classes */
 
 /*! Beginning of Specific class changes */
@@ -173,7 +210,6 @@ section {
 
 .main-menu-nav {
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 }
 
@@ -227,6 +263,10 @@ section {
 	width: 150px;
 }
 
+.dots {
+	display: flex;
+}
+
 /*! Beginning of Specific id /to/ class changes */
 
 #home .container {
@@ -252,6 +292,50 @@ section {
 	margin-right: 3rem;
 }
 
+#features .container {
+	align-items: center;
+	width: 85%;
+	justify-content: center;
+	margin: 3rem auto;
+}
+
+#features .content {
+	width: 130%;
+}
+
+#features .container .content .list img {
+	display: flex;
+	margin: auto;
+	height: 3.75rem;
+	width: 3.75rem;
+}
+
+#features .container .content .list .service-card .image-box {
+	display: flex;
+}
+
+#features .list {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+	flex-wrap: wrap;
+}
+
+#features .container .content .list .service-card {
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+}
+
+#features .iphone-circle {
+	width: 100%;
+}
+
+#features .iphone-circle img {
+	width: 80%;
+}
+
 /*? Start of mediaqueries */
 
 @media (min-width: 768px) {
@@ -261,10 +345,6 @@ section {
 
 	.main-menu-nav {
 		flex-direction: row;
-	}
-
-	.main-menu-link {
-		padding: 0 0.5rem;
 	}
 
 	.main-menu-mobile {
