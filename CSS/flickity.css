@@ -10,17 +10,15 @@ body {
 
 .carousel {
 	height: 80px;
+	margin-bottom: 3rem;
 }
 
 .carousel-cell {
 	width: 66%;
 	height: 80px;
-	margin-right: 10px;
 	background-image: url('../Images/ecutbildning.svg');
 	background-repeat: no-repeat;
 	background-position: center;
-	border-radius: 5px;
-	counter-increment: carousel-cell;
 }
 
 /* cell number */
@@ -30,4 +28,18 @@ body {
 	line-height: 200px;
 	font-size: 80px;
 	color: white;
+}
+
+@media (min-width: 768px) {
+	.carousel {
+		width: 70%;
+		left: 15%;
+	}
+}
+
+@media (min-width: 992px) {
+	.carousel {
+		width: 50%;
+		left: 25%;
+	}
 }

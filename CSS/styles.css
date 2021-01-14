@@ -36,7 +36,7 @@ a:hover {
 }
 
 p {
-	color: #fff;
+	color: #8a8a8a;
 }
 
 h1 {
@@ -46,13 +46,38 @@ h1 {
 	font-weight: bold;
 }
 
+h2 {
+	color: #333333;
+	font-weight: black;
+	font-size: 32px;
+}
+
 section {
 	display: flex;
 	justify-content: space-between;
 }
 
+.white {
+	color: #fff;
+}
+
+.box-p {
+	background-color: rgba(255, 187, 0, 0.15);
+	width: 85px;
+	border-radius: 7%;
+	text-align: center;
+}
+
+.info {
+	color: #ffbb00;
+}
+
 .margin-p {
 	margin: 1rem 0;
+}
+
+.margin-between {
+	margin: 0 5px;
 }
 
 .bg {
@@ -192,6 +217,16 @@ section {
 	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
+.app-download {
+	align-items: center;
+	width: 100%;
+	display: flex;
+}
+
+.app-download img {
+	width: 150px;
+}
+
 /*! Beginning of Specific id /to/ class changes */
 
 #home .container {
@@ -203,6 +238,18 @@ section {
 #home .container .content {
 	margin: 1rem 1rem;
 	width: 60%;
+}
+
+#about-us .container {
+	align-items: center;
+	width: 85%;
+	justify-content: center;
+	margin: 3rem auto;
+}
+
+#about-us .container .iphone-dots img {
+	width: 400px;
+	margin-right: 3rem;
 }
 
 /*? Start of mediaqueries */
@@ -238,8 +285,20 @@ section {
 		padding-left: 10px;
 	}
 
+	#home .container .content {
+		width: 100%;
+	}
+
 	.background {
 		padding-bottom: 30vh;
+	}
+
+	#about-us .container .content {
+		width: 80%;
+	}
+
+	#about-us .container .iphone-dots img {
+		width: 280px;
 	}
 }
 
@@ -256,8 +315,16 @@ section {
 		font-size: 50px;
 	}
 
+	h2 {
+		font-size: 40px;
+	}
+
 	#home .content p {
 		max-width: 70%;
+	}
+
+	#about-us .container .iphone-dots img {
+		width: 360px;
 	}
 }
 
@@ -267,6 +334,10 @@ section {
 	}
 
 	h1 {
+		font-size: 57px;
+	}
+
+	h2 {
 		font-size: 57px;
 	}
 
