@@ -33,7 +33,6 @@ a {
 
 a:hover {
 	color: #ffbb00;
-	/* create a line from left to right under */
 }
 
 p {
@@ -43,7 +42,7 @@ p {
 h1 {
 	color: #fff;
 	font-family: 'Poppins', sans-serif;
-	font-size: 50px;
+	font-size: 28px;
 	font-weight: bold;
 }
 
@@ -65,7 +64,7 @@ section {
 	background-image: url('../Images/home.svg');
 	background-repeat: no-repeat;
 	background-position: bottom;
-	padding-bottom: 13vh;
+	padding-bottom: 40vh;
 }
 
 .poppins {
@@ -75,11 +74,9 @@ section {
 .btn {
 	display: inline-block;
 	text-align: center;
-	vertical-align: middle;
-	background-color: transparent;
 	border: 1px solid transparent;
-	padding: 0.75rem auto;
 	border-radius: 0.5rem;
+	margin: 0.75rem;
 	font-size: 1rem;
 	cursor: pointer;
 	width: 160px;
@@ -122,18 +119,29 @@ section {
 
 /*! Beginning of Specific class changes */
 /** Top menu below this line */
-.main-menu img {
-	height: 100%;
-}
 
 .main-menu {
 	margin: 0.5rem 0;
 	padding: 0.5rem;
 }
 
-.main-menu .container .content {
+.main-menu img {
+	height: 100%;
+}
+
+.main-menu .logo img {
 	display: flex;
-	justify-content: space-between;
+	height: 100%;
+}
+
+.main-menu .container {
+	align-items: center;
+}
+
+.main-menu-nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .main-menu .main-menu-nav a {
@@ -196,11 +204,35 @@ section {
 
 	.main-menu-nav {
 		flex-direction: row;
-		align-items: center;
+	}
+
+	.main-menu-link {
+		padding: 0 0.5rem;
+	}
+
+	.main-menu-mobile {
+		display: none;
 	}
 
 	.collapse {
 		display: flex;
+	}
+
+	h1 {
+		font-size: 33px;
+	}
+
+	#home .container img {
+		width: 350px;
+		padding-left: 10px;
+	}
+
+	.background {
+		padding-bottom: 33vh;
+	}
+
+	#home .playbutton {
+		/* width: 100%; */
 	}
 }
 
@@ -213,15 +245,18 @@ section {
 		display: inline-block;
 	}
 
-	#home img {
-		display: flex;
-		width: 590px;
+	.background {
+		padding-bottom: 13vh;
 	}
 }
 
 @media (min-width: 1200px) {
 	.container {
 		max-width: 1140px;
+	}
+
+	h1 {
+		font-size: 57px;
 	}
 }
 
