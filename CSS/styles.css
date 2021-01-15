@@ -106,7 +106,7 @@ section {
 }
 
 .medium {
-	font-size: 40px;
+	font-size: 25px;
 }
 
 .poppins {
@@ -284,6 +284,7 @@ ul li a:hover::after {
 	align-items: center;
 	width: 100%;
 	display: flex;
+	cursor: pointer;
 }
 
 .app-download img {
@@ -299,6 +300,10 @@ ul li a:hover::after {
 	justify-content: space-between;
 }
 
+footer {
+	background-image: url('/Images/footer.svg');
+	height: 200px;
+}
 /*! Beginning of Specific id /to/ class changes */
 
 #home .container {
@@ -313,7 +318,8 @@ ul li a:hover::after {
 }
 
 #about-us .container,
-#features .container {
+#features .container,
+#download .container {
 	align-items: center;
 	width: 85%;
 	justify-content: center;
@@ -392,6 +398,38 @@ ul li a:hover::after {
 	padding-left: 20%;
 	padding-right: 20%;
 }
+
+#download {
+	text-align: center;
+	background-color: #1487fd;
+	background-image: url('/Images/download-background.svg');
+	margin: 3rem auto;
+}
+
+#download .container img {
+	width: 30%;
+	position: bottom;
+	bottom: -30%;
+	overflow: hidden;
+}
+
+#download .app-download {
+	position: relative;
+	left: 22%;
+}
+
+.footer-nav {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 1.5rem;
+}
+
+.footer-nav .main-menu-link {
+	margin-bottom: 1rem;
+	font-size: small;
+}
+
 /*? Start of mediaqueries */
 
 @media (min-width: 768px) {
@@ -418,6 +456,10 @@ ul li a:hover::after {
 
 	h1 {
 		font-size: 33px;
+	}
+
+	.medium {
+		font-size: 32px;
 	}
 
 	.dots {
@@ -456,6 +498,14 @@ ul li a:hover::after {
 		display: inline-block;
 	}
 
+	.medium {
+		font-size: 40px;
+	}
+
+	.footer-nav .main-menu-link {
+		font-size: medium;
+	}
+
 	h1 {
 		font-size: 50px;
 	}
@@ -488,6 +538,10 @@ ul li a:hover::after {
 
 	#home .content p {
 		max-width: 60%;
+	}
+
+	#download .container {
+		max-width: 68%;
 	}
 
 	.p-sizing {
