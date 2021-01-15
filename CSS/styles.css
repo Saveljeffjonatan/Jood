@@ -304,6 +304,11 @@ footer {
 	background-image: url('/Images/footer.svg');
 	height: 200px;
 }
+
+.contact-style {
+	border: 1px solid transparent;
+	background-color: #fbfbfb;
+}
 /*! Beginning of Specific id /to/ class changes */
 
 #home .container {
@@ -319,7 +324,8 @@ footer {
 
 #about-us .container,
 #features .container,
-#download .container {
+#download .container,
+#contact .container {
 	align-items: center;
 	width: 85%;
 	justify-content: center;
@@ -416,6 +422,17 @@ footer {
 #download .app-download {
 	position: relative;
 	left: 22%;
+}
+
+#contact .content {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+}
+
+#contact .contact-form {
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .footer-nav {
