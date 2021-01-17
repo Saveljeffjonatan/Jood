@@ -293,7 +293,7 @@ ul li a:hover::after {
 }
 
 .app-download img {
-	width: 150px;
+	width: 160px;
 }
 
 .dots img {
@@ -414,7 +414,6 @@ footer {
 	text-align: center;
 	background-color: #1487fd;
 	background-image: url('/Images/download-background.svg');
-	margin: 3rem auto;
 	overflow: hidden;
 }
 
@@ -497,6 +496,10 @@ textarea::placeholder {
 		display: flex;
 	}
 
+	#application-screen .collapse {
+		display: none;
+	}
+
 	main {
 		display: block !important;
 	}
@@ -528,11 +531,15 @@ textarea::placeholder {
 	}
 
 	#about-us .container .content {
-		width: 80%;
+		width: 50%;
 	}
 
 	#about-us .container .iphone-dots img {
 		width: 280px;
+	}
+
+	#application-statistics .container {
+		margin: 1rem auto;
 	}
 }
 
@@ -551,6 +558,10 @@ textarea::placeholder {
 
 	.footer-nav .main-menu-link {
 		font-size: medium;
+	}
+
+	#application-screen .collapse {
+		display: flex;
 	}
 
 	h1 {
@@ -597,6 +608,14 @@ textarea::placeholder {
 
 	.p-sizing {
 		font-size: 16px;
+	}
+
+	.app-download img {
+		width: 280px;
+	}
+
+	#application-statistics {
+		margin: 0 auto;
 	}
 }
 
