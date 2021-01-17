@@ -39,10 +39,6 @@ p {
 	color: #8a8a8a;
 }
 
-.p-sizing {
-	padding: 0 30% 2%;
-}
-
 h1 {
 	color: #fff;
 	font-family: 'Poppins', sans-serif;
@@ -65,23 +61,8 @@ section {
 	justify-content: space-between;
 }
 
-.white {
-	color: #fff;
-}
-
-.box-p {
-	background-color: rgba(255, 187, 0, 0.15);
-	width: 85px;
-	border-radius: 7%;
-	text-align: center;
-}
-
 .info {
 	color: #ffbb00;
-}
-
-.margin-p {
-	margin: 0.5rem 0;
 }
 
 .margin-between {
@@ -92,6 +73,10 @@ section {
 	background-color: rgb(75, 75, 80);
 }
 
+.big {
+	height: 130px !important;
+}
+
 .background {
 	margin: auto;
 	background-image: url('../Images/home.svg');
@@ -100,13 +85,8 @@ section {
 	padding-bottom: 45vh;
 }
 
-.p-medium {
-	color: #333333;
-	font-weight: 500;
-}
-
 .medium {
-	font-size: 25px;
+	font-size: 21px;
 }
 
 .poppins {
@@ -145,6 +125,11 @@ section {
 	margin: 0.75rem 0;
 }
 
+.button-contact {
+	color: #fff;
+	background-color: #3096fe;
+}
+
 .container {
 	width: 100%;
 	/* padding: 0 1rem; */
@@ -167,6 +152,26 @@ section {
 
 .block {
 	margin: 1rem 0;
+}
+
+.p-medium {
+	color: #333333;
+	font-weight: 500;
+}
+
+.margin-p {
+	margin: 0.5rem 0;
+}
+
+.white {
+	color: #fff;
+}
+
+.box-p {
+	background-color: rgba(255, 187, 0, 0.15);
+	width: 85px;
+	border-radius: 7%;
+	text-align: center;
 }
 
 ul {
@@ -281,7 +286,7 @@ ul li a:hover::after {
 }
 
 .app-download {
-	align-items: center;
+	justify-content: center;
 	width: 100%;
 	display: flex;
 	cursor: pointer;
@@ -358,12 +363,12 @@ footer {
 #features .list {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 #features .container .content .list .service-card {
 	flex-grow: 1;
-	width: 50%;
-	max-width: 254px;
+	width: 48%;
 	display: flex;
 }
 #features .container .content .list .service-card img {
@@ -410,31 +415,52 @@ footer {
 	background-color: #1487fd;
 	background-image: url('/Images/download-background.svg');
 	margin: 3rem auto;
-}
-
-#download .container img {
-	width: 30%;
-	position: bottom;
-	bottom: -30%;
 	overflow: hidden;
 }
 
-#download .app-download {
-	position: relative;
-	left: 22%;
+#download .container img {
+	overflow: hidden;
+	transform: translateY(30%);
+	margin-left: 1rem;
 }
 
-#contact .content {
-	width: 60%;
-	display: flex;
-	flex-direction: column;
+#contact {
+	text-align: center;
 }
 
 #contact .contact-form {
 	display: flex;
 	flex-wrap: wrap;
+	width: 85%;
+	margin: 2rem auto 0;
 }
 
+#contact .contact-style {
+	flex-grow: 1;
+	width: 35%;
+	height: 60px;
+	border-radius: 12px;
+}
+
+input[type="text"] {
+	padding: 0.5rem;
+}
+
+textarea {
+	padding: 0.5rem;
+}
+
+input[type="text"]::placeholder {
+	color: #cccccc;
+	font-family: 'Roboto', sans-serif;
+	padding: 0.5rem;
+}
+
+textarea::placeholder {
+	color: #cccccc;
+	font-family: 'Roboto', sans-serif;
+	padding: 0.5rem;
+}
 .footer-nav {
 	display: flex;
 	align-items: center;
@@ -445,6 +471,10 @@ footer {
 .footer-nav .main-menu-link {
 	margin-bottom: 1rem;
 	font-size: small;
+}
+
+.footer-nav .social-media img {
+	margin: 0.5rem;
 }
 
 /*? Start of mediaqueries */
@@ -476,7 +506,7 @@ footer {
 	}
 
 	.medium {
-		font-size: 32px;
+		font-size: 26px;
 	}
 
 	.dots {
@@ -538,6 +568,14 @@ footer {
 	#about-us .container .iphone-dots img {
 		width: 360px;
 	}
+
+	.p-sizing {
+		padding: 0 15% 2%;
+	}
+
+	#download .container .content h2 {
+		padding: 0 14% 2%;
+	}
 }
 
 @media (min-width: 1200px) {
@@ -555,10 +593,6 @@ footer {
 
 	#home .content p {
 		max-width: 60%;
-	}
-
-	#download .container {
-		max-width: 68%;
 	}
 
 	.p-sizing {
